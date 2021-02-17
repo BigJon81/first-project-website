@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+    background-color: rgb(46, 44, 44);
+    color: rgb(187, 221, 207);
+    font-family: 'rochester';
+    font-weight: lighter;
+    letter-spacing: 1.5px;  
+    margin: 15px;
+    min-width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "title subtitle"
+      ". pic"
+      ". pic"
+      "pic2 ."
+      "pic2 ."
+      "pic2 ."
+      "fleet fleet"
+      "book book"
+      "contact contact";
+    position: inherit;
+    background-image: url("/waves3.png");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: inherit;
+  }
+
+    #imagebox {
+      grid-area: pic;
+      display: flex;
+      align-items: center;
+    }
+
+    #image {
+      height: 100px; 
+      width: 100px; 
+      margin: 0 auto;
+      border-radius: 75%;
+      background-image: url("./Ellipse 1.png"); 
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin-left: 10px;
+    }
+
+    #imagebox2 {
+      grid-area: pic2;
+      display: flex;
+      align-items: center;
+    }
+
+    #image2 { 
+      height: 100%; 
+      width: 85%; 
+      margin: 0 auto;
+      background-image: url("./Boaticon.png"); 
+      background-position: center;
+      background-size: 100%;
+      margin-bottom: 90%;
+      background-repeat: no-repeat;
+      object-fit: fill;
+    }
+
+    #title {
+      grid-area: title;
+      }  
+      
+    #subtitle {
+      grid-area: subtitle;
+      }
+      
+    #fleet {
+      grid-area: fleet;
+      }
+      
+    #book {
+      grid-area: book;
+      }
+      
+    #contact {
+      grid-area: contact;
+      }
+      
+    .button {
+      margin: 0 auto;
+      }
+
+    button {
+      width: 300px;
+      height: 60px;
+      font-size: 1cm;
+      font-family: 'rochester';
+      border-radius: 100px;
+      background-color: rgb(59, 97, 59);
+      color: rgb(187, 221, 207);
+      }
+
+    button:hover {
+      background-color: rgb(46, 44, 44);
+      width: 340px;
+      height: 70px;
+      }
+
+    h1 {
+      font-size: 1.5cm;
+      margin-top: 25%;
+      }
+
+    h2 {
+      font-size: 0.75cm;
+      margin-top: 40%;
+      }
+
+  @media only screen and (min-width: 550px) {
+    body {
+      margin: 20px;
+      width: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+        "title title ."
+        "subtitle subtitle pic"
+        "subtitle subtitle pic"
+        "pic2 pic2 ."
+        ". . ."
+        "fleet book contact"
+        ". . .";
+        
+    }
+
+    h1 {
+      font-size: 2cm;
+      margin: 20px;
+      }
+
+    h2 {
+      font-size: 1.25cm;
+      margin-top: 5%;
+      margin-left: 20px;
+    }
+
+    #image {
+      height: 175px; 
+      width: 175px;  
+      margin-left: 10px;
+    }
+
+    #image2 { 
+      height: 175px; 
+      width: 175px; 
+      margin-bottom: 0%;
+    }
+
+    button {
+      width: 300px;
+      height: 60px;
+      font-size: 1cm;
+      margin-bottom: 40px;
+    }
+
+    button:hover {
+      width: 350px;
+      height: 70px;
+    }
+
+  }
+
+  @media only screen and (min-width: 750px) {
+    body {
+
+      #image {
+        height: 250px; 
+        width: 250px;  
+        margin-left: 10px;
+      }
+  
+      #image2 { 
+        height: 250px; 
+        width: 250px; 
+        margin-bottom: 0%;
+      }  
+    }
+  }

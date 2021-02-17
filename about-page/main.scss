@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: #222121;
+  text-align: center;
+  font-family: Rochester; 
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  color: #bbddcf;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "title"
+    "subtitle"
+    "liner1"  
+    "liner2"
+    "liner3"
+    "liner4"
+    "liner5"
+    "liner6";
+}
+
+#maintitle {
+  grid-area: title;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+#subtitle {
+  grid-area: subtitle;
+  margin-bottom: 200px;
+}
+
+#liner1 {grid-area: liner1;}
+#liner2 {grid-area: liner2;}
+#liner3 {grid-area: liner3;}
+#liner4 {grid-area: liner4;}
+#liner5 {grid-area: liner5;}
+#liner6 {grid-area: liner6;}
+
+h1 {
+  font-size: 1.5cm;
+  display: flex;
+  justify-content: center;
+}
+
+#stitle {
+  font-size: 0.8cm;
+  display: flex;
+  justify-content: center;
+}
+
+.names {
+  font-size: 1cm;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 0.7cm;
+}
+
+.image {
+  height: 210;
+  width: 330;
+  margin-bottom: 30px;
+}
+
+.button {
+  margin: 0 auto;
+  }
+
+button {
+  width: 300px;
+  height: 60px;
+  font-size: 1cm;
+  font-family: 'rochester';
+  border-radius: 100px;
+  background-color: rgb(59, 97, 59);
+  color: rgb(187, 221, 207);
+  }
+
+button:hover {
+  background-color: rgb(46, 44, 44);
+  width: 340px;
+  height: 70px;
+  }
+
+@media only screen and (min-width: 550px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "title title ."
+      "subtitle subtitle ."
+      "liner1 liner2 liner3"
+      "liner4 liner5 liner6";
+    width: 100%;
+    height: 100%;
+  } 
+
+  h1 {
+    font-size: 2cm;
+    margin: 20px;
+    justify-content: left;
+    }
+
+  #subtitle {
+    margin-bottom: 25px;
+  }
+
+  #stitle {
+    font-size: 1cm;
+    margin-left: 20px;
+    justify-content: left;
+  }
+
+  .container {
+    // width: 400px;
+    padding: 5px;
+    // height: auto;
+    margin: 30px;
+    margin-bottom: 30px;
+    border-radius: 10%;
+    background-color: rgb(59, 97, 59);
+    color: rgb(187, 221, 207);
+  }
+
+  // .container.hover {
+  //   width: 500px;
+  //   background-color: rgb(46, 44, 44);
+  // }
+
+  .names {
+    font-size: 1.5cm;
+  }
+
+  .image {
+    height: 210;
+    width: 330;
+    margin-bottom: 30px;
+  }
+
+  .para {
+    font-size: 0.8cm
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    background-image: url(/waves2.png);
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat; 
+  } 
+}

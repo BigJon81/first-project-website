@@ -154,7 +154,7 @@ button:hover {
 }
 @media only screen and (max-width: 550px) {
   body {
-    background-image: url(/waves2.png);
+    background-image: url(./Waves2.png);
     background-position: bottom;
     background-size: auto;
     background-repeat: no-repeat;
